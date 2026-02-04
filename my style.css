@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+    -webkit-box-reflect:below 2.5px;
+    border: 3px ridge white;
+    margin: 5px;
+}
+.child{
+    transition: o.5s ease;
+    cursor: pointer;
+
+}
+.parent:hover>:not(:hover){
+    opacity: 0.3;
+}
+.child:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+}
